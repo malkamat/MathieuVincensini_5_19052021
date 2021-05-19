@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fichier css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Polices du site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Signika+Negative&family=Sura&display=swap"
+        rel="stylesheet">
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Oriteddies - mon panier</title>
+</head>
+
+<body>
+    <header class="header-top">
+        <h1 class="header-top__titre">Oriteddies</h1>
+        <nav class="header-top-nav">
+            <a href="#" class="header-top-nav__lien header-top-nav__lien--f290">Mon panier (0)</a>
+            <a href="../index.html" class="header-top-nav__lien header-top-nav__lien--f54f">Accueil</a>
+        </nav>
+    </header>
+
+    <section class="panier">
+        <article class="panier-recap">
+            <table class="panier-recap-table">
+                <thead class="panier-recap-table-header">
+                    <tr class="panier-recap-table-header-row">
+                        <th class="panier-recap-table-header-row__titre1">Article</th>
+                        <th class="panier-recap-table-header-row__titre2">Quantitée</th>
+                        <th class="panier-recap-table-header-row__titre3">Prix</th>
+                    </tr>
+                    <tbody class="panier-recap-table-body">
+      
+                    </tbody>
+                </thead>
+            </table>
+
+        </article>
+        <aside class="panier-checkout">
+            <h3 class="panier-checkout__titre">Total de votre panier : 125.00 €</h3>
+            <form action="" class="panier-checkout-form">
+                <div class="panier-checkout-form-group"> <label>Prénom *</label>
+                    <input type="text" class="panier-checkout-form-group__input-firstName" name="firstName" placeholder="Prénom">
+                </div>
+                <div class="panier-checkout-form-group"> <label>Nom *</label>
+                    <input type="text" class="panier-checkout-form-group__input-lastName" name="lastName"
+                        placeholder="Nom de famille"></div>
+                <div class="panier-checkout-form-group"> <label>Addresse *</label>
+                    <input type="text" class="panier-checkout-form-group__input-address" name="address" placeholder="Addresse">
+                </div>
+                <div class="panier-checkout-form-group">
+                    <label>Ville *</label>
+                    <input type="text" class="panier-checkout-form-group__input-city" name="city" placeholder="Ville"></div>
+                <div class="panier-checkout-form-group">
+
+                    <label>E-mail *</label>
+                    <input required  class="panier-checkout-form-group__input-email" name="email"
+                        placeholder="E-mail"></div>
+
+                        <small class="panier-checkout-form__obligatoire">* champ recquis</small>
+
+                        <button type="submit" class="panier-checkout-form__submit">
+                            Valider mes achats
+                        </button>
+            </form>
+        </aside>
+
+    </section>
+
+    <script type="module" src="../javascript/app/panier.js"></script>
+</body>
+
+</html>
